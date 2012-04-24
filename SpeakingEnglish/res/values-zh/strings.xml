@@ -4,5 +4,5 @@
     <string name="app_name">说英语</string>
     <string name="error_xml_file">XML文件损坏!</string>
     <string name="error_parsing_xml">不能解析XML文件!</string>
-
+    
 </resources>
