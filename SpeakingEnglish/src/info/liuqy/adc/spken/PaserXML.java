@@ -34,12 +34,12 @@ public class PaserXML
             m.put("text", EN_TEXT);
             T.put(EN_TAG, m);
             m = new HashMap<String, Integer>();
-            //m.put("en", PRE_FINAL);
+            // m.put("en", PRE_FINAL);
             m.put("en", EN_TAG);
             T.put(CN_TEXT, m);
             m = new HashMap<String, Integer>();
             m.put("py", PRE_FINAL);
-            //m.put("cn", PRE_FINAL);
+            // m.put("cn", PRE_FINAL);
             T.put(EN_TEXT, m);
             m = new HashMap<String, Integer>();
             m.put("text", FINAL_STATE);
@@ -85,12 +85,12 @@ public class PaserXML
                 else if (state == DFA.FINAL_STATE)
                 {
                     py = xpp.getText();
-                    
+
                     if (DFA.CN_TAG == dfaTag)
                         exprs.put(cn, en);
                     if (DFA.EN_TAG == dfaTag)
                         exprs.put(en, cn + py);
-                    
+
                     dfa.reset();
                     cn = en = py = null;
                 }
