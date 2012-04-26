@@ -31,7 +31,7 @@ public class SpeakingChineseActivity extends ListActivity {
         
 		try {
 			PaserXML paser = new PaserXML();
-			exprs = paser.loadExpressionsFromXml(this, PaserXML.DFA.EN_TAG, R.xml.pycn2en);
+			exprs = paser.loadExpressionsFromXml(this, PaserXML.DFA.EN_TAG, R.xml.cn2en);
 			refreshList();
 		} catch (IOException e) {
 			Toast.makeText(this, R.string.error_xml_file, Toast.LENGTH_SHORT);
